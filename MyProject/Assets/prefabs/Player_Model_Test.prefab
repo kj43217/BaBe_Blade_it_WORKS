@@ -137,6 +137,9 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   speed: 5
+  magneticForce: 50
+  Playermodel: {fileID: 3039865800524018048}
+  arenaField: {fileID: 2750559701954628005, guid: b33a3fada7ff82243b1016d45116e7d7, type: 3}
 --- !u!114 &-7377938436360281856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,7 +147,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3039865800524018048}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c5c7b67e61835f49b4f7973544503de, type: 3}
   m_Name: 
@@ -152,8 +155,8 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   magneticForce: 50
-  Playermodel: {fileID: 3039865800524018048}
   arenaField: {fileID: 2750559701954628005, guid: b33a3fada7ff82243b1016d45116e7d7, type: 3}
+  Playermodel: {fileID: 3039865800524018048}
 --- !u!114 &6858545278329735836
 MonoBehaviour:
   m_ObjectHideFlags: 0
