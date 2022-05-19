@@ -1,0 +1,13 @@
+Buenas tardes/dias
+
+el juego, es un juego multijugador que simula el juego de bayublade, el cual era muy popular durante nuestras infacias
+el juego es puramente multijugador, por lo que para el testing se agrego el parallel sync, y el mirror addon de unity para el netcode
+no pudimos implementar una base de datos funcional(cambiar piezas del trompo), debido a la naturaleza de como manejamos el netcode,
+la cual es majedada casi completamente de forma individual "clientside" lo cual no es lo mas eficiente ni recomendable, pero fue lo mas rapido y sencillo
+de implementar utilizando el tracking de la posicion de los otros jugadores para que las interacciones como las colisiones se mantuvieran syncronizadas.
+
+
+Instrucciones
+
+	Movimiento - Arrow Keys
+	Attaqu - SpaceBar

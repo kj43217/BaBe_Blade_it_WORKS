@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7894671917690505304}
   - component: {fileID: 7513516452989103134}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Hit_Box
   m_TagString: Hit_Box
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 3675641405471397118}
   - component: {fileID: 8017561744224007187}
   - component: {fileID: 2018336974062998506}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Player1_Final_Model
   m_TagString: Player
   m_Icon: {fileID: 0}

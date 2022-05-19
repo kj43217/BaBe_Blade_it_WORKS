@@ -22,15 +22,15 @@ public class Player_Attack_Controller : NetworkBehaviour
     int HPHash;
 
     void Awake()
-    {
-        Change_to_Normla_BounceForce();
-        Player_Attack_HitBox_Disabled();
+    { 
         animationComponent = GetComponent<Animator>();
         currentHP = HP;
     }
 
     void Start()
     {
+        Change_to_Normla_BounceForce();
+        Player_Attack_HitBox_Disabled();
         Animation_Controller(State.movementState);
         playerSpawnedHash = Animator.StringToHash("GameStarted");
         playerAttackingHash = Animator.StringToHash("Attack");
@@ -88,7 +88,7 @@ public class Player_Attack_Controller : NetworkBehaviour
     {
         if(other.transform.tag == "Player")
         {
-            currentHP -= 1;
+            currentHP -= 2;
         }
         else if(other.transform.tag == "Hit_Box")
         {

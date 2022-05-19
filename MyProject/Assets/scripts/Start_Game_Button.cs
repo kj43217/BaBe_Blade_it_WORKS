@@ -7,6 +7,11 @@ public class Start_Game_Button : MonoBehaviour
 {
     public void Change_Scene()
     {
-        SceneManager.LoadScene(sceneName: "Main_Tittle_Scene");
+        SceneManager.LoadScene(sceneName: "Game_Scene");
+    }
+
+    public void Exit_Game()
+    {
+        Application.Quit();
     }
 }
