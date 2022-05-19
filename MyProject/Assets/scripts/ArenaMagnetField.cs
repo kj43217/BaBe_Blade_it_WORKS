@@ -5,7 +5,7 @@ using Mirror;
 
 public class ArenaMagnetField : NetworkBehaviour
 {
-    /*public float magneticForce;
+    public float magneticForce;
 
     public GameObject arenaField;
     public GameObject Playermodel;

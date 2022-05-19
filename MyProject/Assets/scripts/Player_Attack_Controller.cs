@@ -24,14 +24,14 @@ public class Player_Attack_Controller : NetworkBehaviour
     void Awake()
     {
         Change_to_Normla_BounceForce();
-        /*Player_Attack_HitBox_Disabled();*/
+        Player_Attack_HitBox_Disabled();
         animationComponent = GetComponent<Animator>();
         currentHP = HP;
     }
 
     void Start()
     {
-        Animation_Controller(State.idleState);
+        Animation_Controller(State.movementState);
         playerSpawnedHash = Animator.StringToHash("GameStarted");
         playerAttackingHash = Animator.StringToHash("Attack");
         HPHash = Animator.StringToHash("HP");
@@ -55,8 +55,7 @@ public class Player_Attack_Controller : NetworkBehaviour
 
     void Update()
     {
-        Debug.Log(bounceForce);
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKey("space"))
         {
             if (playerAttackEnabled == true)
             {
@@ -69,7 +68,6 @@ public class Player_Attack_Controller : NetworkBehaviour
     
     private IEnumerator Attack_Timer()
     {
-        Debug.Log("helo");
         WaitForSeconds wait = new WaitForSeconds(2.5f);
 
         while (true)
@@ -124,10 +122,10 @@ public class Player_Attack_Controller : NetworkBehaviour
         hitBoxCollider.enabled = true;
     }
 
-    /*void Player_Attack_HitBox_Disabled()
+    void Player_Attack_HitBox_Disabled()
     {
         hitBoxCollider.enabled = false;
-    }*/
+    }
 
     void OnCollisionEnter(Collision other)
     {
